@@ -1,0 +1,102 @@
+.materiasContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.materia{
+    background-color: #00477F;
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    
+}
+
+.materia:hover{
+    background-color: #003555;
+    width: 370px;
+    height: 270px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.materia--content{
+    margin-top: 30px;
+}
+
+.materia--tit{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.materia--dif{
+    color: white;
+}
+
+.difbar{
+    display: flex;
+    width: 250px;
+    height: 15px;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.progbar{
+    display: flex;
+    width: 250px;
+    height: 15px;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.difValue1{
+    width: 66%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.difValue2{
+    width: 33%;
+    height: 100%;
+    background-color: #00ff00;
+}
+
+.difValue3{
+    width: 100%;
+    height: 100%;
+    background-color: #f00;
+}
+
+.progValue1{
+    width: 0%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.progValue2{
+    width: 66%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.progValue3{
+    width: 100%;
+    height: 100%;
+    background-color: #0f0;
+}
+
+.progValue4{
+    width: 30%;
+    height: 100%;
+    background-color: #f00;
+}

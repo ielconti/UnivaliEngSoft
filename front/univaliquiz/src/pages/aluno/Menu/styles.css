@@ -1,0 +1,60 @@
+.tabBar{
+    display: flex;
+    background-color: #00477F;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.logoMenu{
+    margin-top: 40px;
+    width: 77px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.menuItem{
+    display: flex;
+    width: 150px;
+    height: 100px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 100px;
+    justify-content: center;
+    background-color: #00477F;
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
+
+.menuItem--selecionado{
+    display: flex;
+    width: 150px;
+    height: 100px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 100px;
+    justify-content: center;
+    background-color: #003555;
+}
+
+.menuItem:hover{
+    background-color: #003555;
+    cursor: pointer;
+}
+
+.menuIcon{
+    position: inherit;
+    color: white;
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}

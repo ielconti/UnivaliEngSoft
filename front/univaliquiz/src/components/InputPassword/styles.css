@@ -1,0 +1,44 @@
+.inputContainer{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.input{
+    width: 100%;
+    background-color: white;
+    border: 0px;
+    height: 25px;
+    border-radius: 5px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.label{
+    font-size: small;
+    color: white;
+    text-align: left;
+    padding: 5px;
+}
+
+.icon{
+    position: absolute;
+    color: black;
+    padding: 3px;
+    padding-left: 5px;
+}
+
+.secIcon{
+    position: absolute;
+    margin-left: 275px;
+    padding: 3px;
+    color: black;
+}
+
+.secIcon:hover{
+    color: gray;
+}

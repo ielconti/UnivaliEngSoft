@@ -1,0 +1,107 @@
+.square{
+    position: absolute;
+    height: 550px;
+    width: 450px;
+    background-color: #00477F;
+    border-radius: 30px;
+    /* margin: 0; */
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    margin-top: 40px;
+    width: 153px;
+    height: 100px;
+}
+
+.title{
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.inputContainer{
+    width: 300px;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.input{
+    width: 100%;
+    background-color: white;
+    border: 0px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.label{
+    font-size: small;
+    color: white;
+    text-align: left;
+    padding: 5px;
+}
+
+.radio{
+    color: white;
+    margin-top: 25px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.forgot{
+    color: white;
+    font-size: 15px;
+    margin-top: 40px;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+.forgot:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.button{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #00477F;
+    border-radius: 10px;
+    margin-top: 40px;
+    border-color: white;
+    border-style: solid;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #003555;
+}
+
+.termsContainer{
+    position: absolute;
+    /* display: inline-block; */
+    flex-direction: row;
+    align-self: center;
+    bottom: 10px;
+    left: 40%;
+}
+
+.terms{
+    color: gray;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.terms:hover{
+    color: darkgray;
+    cursor: pointer;
+}
