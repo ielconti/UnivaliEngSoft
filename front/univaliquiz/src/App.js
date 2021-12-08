@@ -15,6 +15,7 @@ import ProfessorMenu from './pages/professor/Menu'
 import ProfessorTrilhas from './pages/professor/Trilhas'
 import ProfessorNovaTrilha from './pages/professor/NovaTrilha'
 import ProfessorNovaQuestao from './pages/professor/NovaQuestao'
+import ProfessorNovoAluno from './pages/professor/NovoAluno'
 
 import './App.css';
 
@@ -35,6 +36,7 @@ function App() {
           <Route path='/professor/trilhas' element={<ProfessorTrilhas />} />
           <Route path='/professor/novatrilha' element={<ProfessorNovaTrilha />} />
           <Route path='/professor/novaquestao' element={<ProfessorNovaQuestao />} />
+          <Route path='/professor/novoaluno' element={<ProfessorNovoAluno />} />
         </Routes>
       </UsuarioProvider>
     </div>

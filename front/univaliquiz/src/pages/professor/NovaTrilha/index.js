@@ -86,7 +86,7 @@ export default function NovaTrilha() {
                         <input type='checkbox' onChange={(e) => setTodosAlunos(e.target.checked)} />Marcar todos
                     </div>
                     <div>
-                        <button className='button' onClick={() => { }} >Novo aluno</button>
+                        <button className='button' onClick={() => navigate('/professor/novoaluno')} >Novo aluno</button>
                     </div>
                 </div>
                 <div className='nt--section' >
