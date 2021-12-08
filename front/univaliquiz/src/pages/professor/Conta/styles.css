@@ -1,0 +1,33 @@
+.conta--container{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    width: 90vh;
+    margin-top: 25px;
+    background-color: white;
+    border-width: 5px;
+    border-color: #00477F;
+    border-style: solid;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conta--pic{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: #00477F;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.conta--pic:hover{
+    cursor: pointer;
+    background-color: #003555;
+}
+
+.picture--icon{
+    margin-top: 50px;
+}

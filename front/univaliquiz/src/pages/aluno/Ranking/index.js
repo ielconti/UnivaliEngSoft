@@ -19,7 +19,8 @@ export default function Ranking() {
         <div>
             <span className='materiasContainer' >
 
-                <div className='materia' onClick={() => setPage(3)} >
+                {/* <div className='materia' onClick={() => setPage(3)} > */}
+                <div className='materia' onClick={() => navigate('/aluno/relatorio')} >
                     <div className='materia--content--ranking' >
                         <span className='materia--tit' >Lógica de programação</span>
                     </div>
@@ -39,7 +40,7 @@ export default function Ranking() {
                     </div>
                 </div>
 
-                <div className='materia' onClick={() => setPage(3)} >
+                <div className='materia' onClick={() => navigate('/aluno/relatorio')} >
                     <div className='materia--content--ranking' >
                         <span className='materia--tit' >Estrutura de dados</span>
                     </div>
@@ -59,7 +60,7 @@ export default function Ranking() {
                     </div>
                 </div>
 
-                <div className='materia' onClick={() => setPage(3)} >
+                <div className='materia' onClick={() => navigate('/aluno/relatorio')} >
                     <div className='materia--content--ranking' >
                         <span className='materia--tit' >Banco de dados</span>
                     </div>

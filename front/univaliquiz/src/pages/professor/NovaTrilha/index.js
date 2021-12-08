@@ -3,6 +3,7 @@ import { FaCheck } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom'
 
 import { useUsuario } from '../../../providers/usuario';
+import logo from '../../../assets/logo.png'
 
 import './styles.css';
 
@@ -68,63 +69,69 @@ export default function NovaTrilha() {
     ]
 
     return (
-        <div className='nt--container' >
-            <div className='nt--section' >
-                <div style={{ marginTop: '5px', marginBottom: '10px', fontWeight: 'bold' }} >Alunos</div>
-                {
-                    alunos.map((id, nome) => {
-                        return ListAluno(id, nome)
-                    })
-                }
-                <div style={{ marginTop: '5px' }} >
-                    <input type='checkbox' onChange={(e) => setTodosAlunos(e.target.checked)} />Marcar todos
-                </div>
-                <div>
-                    <button className='button' onClick={() => { }} >Novo aluno</button>
-                </div>
+        <>
+            <div className='tabBar' >
+                <img className='logoMenu' src={logo} />
+                <span className='tabTitle' ></span>
             </div>
-            <div className='nt--section' >
-                <div style={{ marginTop: '5px', marginBottom: '10px', fontWeight: 'bold' }} >Questões</div>
-                {
-                    questoes.map((id, nome) => {
-                        return ListQuestao(id, nome)
-                    })
-                }
-                <div style={{ marginTop: '5px' }} >
-                    <input type='checkbox' onChange={(e) => setTodasQuestoes(e.target.checked)} />Marcar todas
-                </div>
-                <div>
-                    <button className='button' onClick={() => navigate('/professor/novaquestao')} >Nova questão</button>
-                </div>
-            </div>
-            <div className='nt--section--noline' >
-                <div className='inputContainer' style={{ marginLeft: '15%', marginTop : '25%' }} >
-                    <div className='label' style={{ color: 'black' }} >Nome da trilha</div>
-                    <div className='row' style={{ width: '90%' }} >
-                        <input
-                            style={{ width: '100%' }}
-                            type='text'
-                            placeholder='Defina um nome para a trilha'
-                        />
+            <div className='nt--container' >
+                <div className='nt--section' >
+                    <div style={{ marginTop: '5px', marginBottom: '10px', fontWeight: 'bold' }} >Alunos</div>
+                    {
+                        alunos.map((id, nome) => {
+                            return ListAluno(id, nome)
+                        })
+                    }
+                    <div style={{ marginTop: '5px' }} >
+                        <input type='checkbox' onChange={(e) => setTodosAlunos(e.target.checked)} />Marcar todos
+                    </div>
+                    <div>
+                        <button className='button' onClick={() => { }} >Novo aluno</button>
                     </div>
                 </div>
-                <div className='inputContainer' style={{ marginLeft: '15%' }} >
-                    <div className='label' style={{ color: 'black' }} >Dificuldade da trilha</div>
-                    <div className='row' style={{ width: '90%' }} >
-                        <select style={{ width: '100%' }} >
-                            <option value="Iniciante">Iniciante</option>
-                            <option value="Intermediário">Intermediário</option>
-                            <option value="Avançado">Avançado</option>
-                        </select>
+                <div className='nt--section' >
+                    <div style={{ marginTop: '5px', marginBottom: '10px', fontWeight: 'bold' }} >Questões</div>
+                    {
+                        questoes.map((id, nome) => {
+                            return ListQuestao(id, nome)
+                        })
+                    }
+                    <div style={{ marginTop: '5px' }} >
+                        <input type='checkbox' onChange={(e) => setTodasQuestoes(e.target.checked)} />Marcar todas
+                    </div>
+                    <div>
+                        <button className='button' onClick={() => navigate('/professor/novaquestao')} >Nova questão</button>
                     </div>
                 </div>
-                <div style={{ marginTop: '15px' }} >
-                    <input type='checkbox' onChange={(e) => {}} />Disponibilizar trilha
-                </div>
-                <div>
-                    <button className='button' onClick={() => { }} >Salvar trilha</button>
+                <div className='nt--section--noline' >
+                    <div className='inputContainer' style={{ marginLeft: '15%', marginTop: '25%' }} >
+                        <div className='label' style={{ color: 'black' }} >Nome da trilha</div>
+                        <div className='row' style={{ width: '90%' }} >
+                            <input
+                                style={{ width: '100%' }}
+                                type='text'
+                                placeholder='Defina um nome para a trilha'
+                            />
+                        </div>
+                    </div>
+                    <div className='inputContainer' style={{ marginLeft: '15%' }} >
+                        <div className='label' style={{ color: 'black' }} >Dificuldade da trilha</div>
+                        <div className='row' style={{ width: '90%' }} >
+                            <select style={{ width: '100%' }} >
+                                <option value="Iniciante">Iniciante</option>
+                                <option value="Intermediário">Intermediário</option>
+                                <option value="Avançado">Avançado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style={{ marginTop: '15px' }} >
+                        <input type='checkbox' onChange={(e) => { }} />Disponibilizar trilha
+                    </div>
+                    <div>
+                        <button className='button' onClick={() => { }} >Salvar trilha</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

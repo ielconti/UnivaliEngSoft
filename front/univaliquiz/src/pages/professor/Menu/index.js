@@ -8,6 +8,8 @@ import { useUsuario } from '../../../providers/usuario';
 
 import Trilhas from '../Trilhas';
 import NovaTrilha from '../NovaTrilha';
+import Relatorio from '../Relatorio';
+import Conta from '../Conta';
 
 import logo from '../../../assets/logo.png'
 
@@ -33,7 +35,9 @@ export default function Menu() {
                 </div>
             </div>
             { page === 0 && <Trilhas /> }
-            { page === 4 && <NovaTrilha /> }
+            { page === 1 && <Relatorio /> }
+            { page === 2 && <Conta /> }
+            {/* { page === 4 && <NovaTrilha /> } */}
         </>
     )
 }

@@ -8,6 +8,7 @@ import Login from './pages/login'
 import AlunoTrilhas from './pages/aluno/Trilhas'
 import AlunoPergunta from './pages/aluno/Pergunta'
 import AlunoRanking from './pages/aluno/Ranking'
+import AlunoRelatorio from './pages/aluno/Relatorio'
 import AlunoMenu from './pages/aluno/Menu'
 
 import ProfessorMenu from './pages/professor/Menu'
@@ -27,6 +28,7 @@ function App() {
           <Route path='/aluno/trilhas' element={<AlunoTrilhas />} />
           <Route path='/aluno/pergunta' element={<AlunoPergunta />} />
           <Route path='/aluno/ranking' element={<AlunoRanking />} />
+          <Route path='/aluno/relatorio' element={<AlunoRelatorio />} />
           <Route path='/aluno/menu' element={<AlunoMenu />} />
 
           <Route path='/professor/menu' element={<ProfessorMenu />} />

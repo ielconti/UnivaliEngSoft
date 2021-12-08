@@ -8,6 +8,7 @@ import { useUsuario } from '../../../providers/usuario';
 import Trilhas from '../Trilhas';
 import Ranking from '../Ranking';
 import Relatorio from '../Relatorio';
+import Conta from '../Conta';
 
 import logo from '../../../assets/logo.png'
 
@@ -36,7 +37,7 @@ export default function Menu() {
             </div>
             { page === 0 && <Trilhas /> }
             { page === 1 && <Ranking /> }
-            {/* { page === 2 && <Conta /> } */}
+            { page === 2 && <Conta /> }
             { page === 3 && <Relatorio /> }
         </>
     )

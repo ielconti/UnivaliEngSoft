@@ -15,7 +15,8 @@ export default function Trilhas() {
         <div>
             <span className='materiasContainer' >
 
-                <div className='materia' onClick={() => navigate('/aluno/pergunta')} >
+                {/* <div className='materia' onClick={() => setPage(4)} > */}
+                <div className='materia' onClick={() => navigate('/professor/novatrilha')} >
                     <div className='materia--content' >
                         <span className='materia--tit' >Lógica de programação</span>
                     </div>
@@ -31,7 +32,7 @@ export default function Trilhas() {
                     </div>
                 </div>
 
-                <div className='materia' onClick={() => navigate('/aluno/pergunta')} >
+                <div className='materia' onClick={() => navigate('/professor/novatrilha')} >
                     <div className='materia--content' >
                         <span className='materia--tit' >Estrutura de dados</span>
                     </div>
@@ -47,7 +48,7 @@ export default function Trilhas() {
                     </div>
                 </div>
 
-                <div className='materia' onClick={() => setPage(4)} >
+                <div className='materia' onClick={() => navigate('/professor/novatrilha')} >
                     <FiPlusSquare style={{ margin: 'auto', marginTop: '20%' }} color='#fff' size={100} />
                     <div style={{ color: 'white' }} >Nova trilha</div>
                 </div>

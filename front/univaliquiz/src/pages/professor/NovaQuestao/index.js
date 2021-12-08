@@ -29,7 +29,7 @@ export default function NovaQuestao() {
 
                     <div className='nq--row' >
                         <div className='nq--input' >
-                            <div className='label' style={{ color: 'black' }} >Dificuldade da trilha</div>
+                            <div className='label' style={{ color: 'black' }} >Dificuldade da questão</div>
                             <div className='row' style={{ width: '100%' }} >
                                 <select style={{ width: '100%' }} >
                                     <option value="Iniciante">Iniciante</option>
@@ -53,6 +53,7 @@ export default function NovaQuestao() {
                             </div>
                         </div>
                     </div>
+                    
                     <div className='nq--row' >
                         <div className='nq--input' >
                             <div className='label' style={{ color: 'black' }} >Título da questão</div>

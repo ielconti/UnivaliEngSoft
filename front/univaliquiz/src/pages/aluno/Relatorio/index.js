@@ -1,11 +1,16 @@
 import React from 'react'
 import { FaFilePdf } from 'react-icons/fa';
 
+import logo from '../../../assets/logo.png'
 import './styles.css';
 
 export default function Relatorio() {
     return (
         <>
+            <div className='tabBar' >
+                <img className='logoMenu' src={logo} />
+                <span className='tabTitle' ></span>
+            </div>
             <div className='relatorio--materia--tit' >TÍTULO DA MATÉRIA</div>
             <div className='relatorio--container' >
                 <div className='relatorio--collumn' >
